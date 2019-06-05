@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type?:"text/javascript" src="js/arte.js"></script>
+  </head>
+  <body id="fondo">
+    <header>
+      <nav>
+        <div>
+            <a href="index.html"><img src="img/home.svg"></a>
+          </div>
+      </nav>
+    </header>
+    <main id="seccion1">
+      <h1>Bienvenido <span id="jugador"></span> <h1>
+        <form id="quizArte"  action="">
+        <!-- pregunta1 -->
+          <label class="preguntas">Nombre de actor que interpretó a el Padrino Vitto Corleone</label>
+          <label class="block" for="correcta1" >
+            <input type="radio" id="correcta1" " name="respuesta1" value="Marlonbrando" />
+            Marlon Brando
+          </label>
+          <label class="block" for="correcta1" >
+          <input type="radio" class="incorrecta" name="respuesta1" value="Yo mero caguamero"  />
+          Yo mero caguamero
+          </label>
+          <label class="block" for="correcta1" >
+          <input type="radio" class="incorrecta"  name="respuesta1" value="Mi Abuelito" />
+          Mi abuelito
+          </label>
+       <!-- pregunta 2 -->
+          <label class="preguntas">Género cinematográfico al que pertenece la saga de Star Wars</label>
+          <label class="block" for="correcta2" >
+            <input type="radio" id="correcta2" " name="respuesta2" value="Cienciaficción" />
+            Ciencia Ficción
+          </label>
+          <label class="block" for="incorrecta" >
+          <input type="radio" class="incorrecta" name="respuesta2" value="Terror"  />
+          Terror
+          </label>
+          <label class="block" for="incorrecta" >
+          <input type="radio" class="incorrecta"  name="respuesta2" value="Porno" />
+          Porno
+          </label>
+        <!-- pregunta3-->
+          <label class="preguntas">Nombre del director de la pelicula "La forma del agua"</label>
+          <label class="block" for="correcta3" >
+            <input type="radio" id="correcta3" " name="respuesta3" value="GuillermodelToro" />
+            Guillermo del Toro
+          </label>
+          <label class="block" for="incorrecta" >
+          <input type="radio" class="incorrecta" name="respuesta3" value="Chatanuga"  />
+          Chatanuga
+          </label>
+          <label class="block" for="incorrecta" >
+          <input type="radio" class="incorrecta"  name="respuesta3" value="Slenderman" />
+          Slenderman
+          </label>
+          <input id = "button" type = "button" value = "Termine" onclick = "check();">
+        </form>
+
+        <div id="enviado">
+          <p id="result"></p>
+          <p id="mensaje"></p>
+          <img id="giff" src="" alt="">
+          <a href="jugar.html" id="volver">¿Volver a jugar?</a>
+          <a href="https://www.google.com" id="salir">Salir</a>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy;</p>
+    </footer>
+
+  </body>
+</html>
